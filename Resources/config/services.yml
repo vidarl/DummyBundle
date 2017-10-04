@@ -1,0 +1,4 @@
+services:
+#    vidarl_dummy.example:
+#        class: Vidarl\DummyBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

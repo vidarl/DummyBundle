@@ -1,0 +1,10 @@
+{
+  "name": "DummyBundle",
+  "repository": "https://github.com/vidarl/DummyBundle",
+  "description": "Vidarl Dummy Bundle",
+  "version": "1.0.0",
+  "devDependencies": {
+  },
+  "scripts": {
+  }
+}
