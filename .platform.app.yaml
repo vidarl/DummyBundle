@@ -40,17 +40,15 @@ mounts:
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
-        ls -all
-#        rm web/app_dev.php
-#        app/console --env=prod assetic:dump
+        # We need bash for the glob, so everything is in a separate script
+        /bin/bash -c './.platform_hook_build.sh'
     deploy: |
-         ls -all
-#        set -e
-#        if [ ! -f web/var/.platform.installed ]; then
-#            php -d memory_limit=-1 app/console ezplatform:install --env prod demo
-#            touch web/var/.platform.installed
-#        fi
-#        app/console --env=prod cache:clear
+        set -e
+        if [ ! -f web/var/.platform.installed ]; then
+            php -d memory_limit=-1 app/console ezplatform:install --env prod demo
+            touch web/var/.platform.installed
+        fi
+        app/console --env=prod cache:clear
 
 # The configuration of scheduled execution.
 # see http://symfony.com/doc/current/components/console/introduction.html
