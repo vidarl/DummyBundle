@@ -22,7 +22,7 @@ git checkout -b tmp_branch
 
 # Put meta in /app
 # Fixme : ATM no way of defining METAREPO in bundle
-METAREPO="https://github.com/vidarl/ezplatform-demo-vl.git"
+METAREPO="https://github.com/ezsystems/ezplatform-demo.git"
 cd /tmp
 git clone --depth 1 --single-branch --branch master $METAREPO meta_repo
 mv /tmp/meta_repo/* /app/
