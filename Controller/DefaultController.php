@@ -37,4 +37,18 @@ class DefaultController extends Controller
         return $response;
     }
 
+    /**
+     * @Route("/status500")
+     */
+    public function status500Action()
+    {
+        if (file_exists('/tmp/status500')) {
+            asd();
+        }
+        $response = $this->render('VidarlDummyBundle:Default:index.html.twig');
+        $response->headers->set('X-Location-Id', 'location-42,location-43');
+        $response->headers->set('xkey', 'foobar');
+        $response->setSharedMaxAge(30);
+        return $response;
+    }
 }
