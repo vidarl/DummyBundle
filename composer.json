@@ -11,5 +11,10 @@
     },
     "require-dev": {
         "phpunit/phpunit": "~4.7"
-    }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-tmp_ci_branch": "1.x-dev"
+        }
+	}
 }
