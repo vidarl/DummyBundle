@@ -1,0 +1,15 @@
+ezrichtext.custom_tags.vyoutube.label: VYoutube
+ezrichtext.custom_tags.vyoutube.description: ''
+ezrichtext.custom_tags.vyoutube.attributes.autoplay.label: Autoplay
+ezrichtext.custom_tags.vyoutube.attributes.height.label: Height
+ezrichtext.custom_tags.vyoutube.attributes.title.label: Title
+ezrichtext.custom_tags.vyoutube.attributes.video_url.label: 'Video url'
+ezrichtext.custom_tags.vyoutube.attributes.width.label: Width
+ezrichtext.custom_tags.vyoutube.attributes.align.label: 'Align'
+ezrichtext.custom_tags.rawhtml.label: RawHtml
+ezrichtext.custom_tags.rawhtml.description: ''
+ezrichtext.custom_tags.rawhtml.attributes.customattra.label: 'Custom Attribute A'
+ezrichtext.custom_tags.rawhtml.attributes.customattrb.label: 'Custom Attribute B'
+ezrichtext.custom_tags.linebreak.label: Linebreak
+ezrichtext.custom_tags.linebreak.description: ''
+ezrichtext.custom_tags.linebreak.attributes.foobar.label: 'Foobar'
