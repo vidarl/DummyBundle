@@ -1,0 +1,9 @@
+<div>
+    {% if params.attrTitle is defined %}{{ params.attrTitle }}{% endif %}<br/>
+    {% if params.attrDesc is defined %}{{ params.attrDesc }}{% endif %}<br/>
+    color : {{ params.attrColor }}<br/>
+    node_id : (N/A)<br/>
+    contentobject_id: (N/A)<br/>
+    {{content | raw}}
+    {# {{ content}} #}
+</div>

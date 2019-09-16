@@ -2,7 +2,8 @@ system:
     default:
         fieldtypes:
             ezrichtext:
-                custom_tags: [vyoutube, rawhtml, linebreak]
+                custom_tags: [vyoutube, linebreak, vcustom, vcustominline]
+                #custom_tags: [vyoutube, rawhtml, linebreak, vcustom]
 
 ezrichtext:
     custom_tags:
@@ -51,6 +52,47 @@ ezrichtext:
             icon: '/bundles/ezplatformadminui/img/ez-icons.svg#video'
             attributes:
                 foobar:
+                    type: 'string'
+                    required: true
+                    default_value: ''
+
+        vcustom:
+            template: 'VidarlDummyBundle:field_type/ezrichtext/custom_tag:vcustom.html.twig'
+            icon: '/bundles/ezplatformadminui/img/ez-icons.svg#video'
+            attributes:
+                attrTitle:
+                    type: 'string'
+                    required: true
+                    default_value: ''
+                attrDesc:
+                  type: 'string'
+                  required: true
+                  default_value: ''
+                attrColor:
+                  type: 'choice'
+                  required: true
+                  default_value: ''
+                  choices: [red, blue, green]
+                attrUrl:
+                  type: 'string'
+                  required: true
+                  default_value: ''
+
+        vcustominline:
+            template: 'VidarlDummyBundle:field_type/ezrichtext/custom_tag:vcustominline.html.twig'
+            icon: '/bundles/ezplatformadminui/img/ez-icons.svg#video'
+            is_inline: true
+            attributes:
+                attrTitle:
+                    type: 'string'
+                    required: true
+                    default_value: ''
+                attrCar:
+                    type: 'choice'
+                    required: true
+                    choices: [ford, bmw, audi]
+                    default_value: ''
+                attrUrl:
                     type: 'string'
                     required: true
                     default_value: ''

@@ -12,4 +12,10 @@ ezrichtext.custom_tags.rawhtml.attributes.customattra.label: 'Custom Attribute A
 ezrichtext.custom_tags.rawhtml.attributes.customattrb.label: 'Custom Attribute B'
 ezrichtext.custom_tags.linebreak.label: Linebreak
 ezrichtext.custom_tags.linebreak.description: ''
-ezrichtext.custom_tags.linebreak.attributes.foobar.label: 'Foobar'
+ezrichtext.custom_tags.vcustom.attributes.attrTitle.label: 'Title'
+ezrichtext.custom_tags.vcustom.attributes.attrDesc.label: 'Description'
+ezrichtext.custom_tags.vcustom.attributes.attrColor.label: 'Color'
+ezrichtext.custom_tags.vcustom.attributes.attrU rl.label: 'Url'
+ezrichtext.custom_tags.vcustominline.attributes.attrTitle.label: 'Title'
+ezrichtext.custom_tags.vcustominline.attributes.attrCar.label: 'Car'
+ezrichtext.custom_tags.vcustominline.attributes.attrUrl.label: 'Url'

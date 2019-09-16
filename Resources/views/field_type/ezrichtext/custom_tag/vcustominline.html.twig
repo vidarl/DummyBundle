@@ -1,0 +1,8 @@
+<span>
+    {% if params.attrTitle is defined %}{{ params.attrTitle }}{% endif %},
+    car : {{ params.attrCar }},
+    url : {{ params.attrUrl }},
+    node_id : (N/A),
+    contentobject_id: (N/A),
+    {{content | raw}}
+</span>

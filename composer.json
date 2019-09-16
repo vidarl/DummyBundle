@@ -14,7 +14,8 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-tmp_ci_branch": "1.x-dev"
+            "dev-tmp_ci_branch": "1.x-dev",
+            "dev-vcustomtag": "1.x-dev"
         }
 	}
 }
