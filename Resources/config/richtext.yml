@@ -1,0 +1,91 @@
+#ezrichtext:
+custom_tags:
+    vyoutube:
+        template: 'VidarlDummyBundle:field_type/ezrichtext/custom_tag:vyoutube.html.twig'
+#            template: 'DummyBundle:field_type/ezrichtext/custom_tag:vyoutube.html.twig'
+        icon: '/bundles/ezplatformadminui/img/ez-icons.svg#video'
+        attributes:
+            title:
+                type: 'string'
+                required: true
+                default_value: ''
+            video_url:
+                type: 'string'
+                required: true
+            width:
+                type: 'number'
+                required: true
+                default_value: 640
+            height:
+                type: 'number'
+                required: true
+                default_value: 360
+            autoplay:
+                type: 'boolean'
+                default_value: false
+            align:
+                type: 'choice'
+                required: false
+                default_value: 'left'
+                choices: ['left', 'center', 'right']
+#        rawhtml:
+#            template: 'VidarlDummyBundle:field_type/ezrichtext/custom_tag:rawhtml.html.twig'
+#            icon: '/bundles/ezplatformadminui/img/ez-icons.svg#video'
+#            attributes:
+#                customattra:
+#                    type: 'string'
+#                    required: true
+#                    default_value: ''
+#                customattrb:
+#                    type: 'string'
+#                    required: true
+#                    default_value: ''
+    linebreak:
+        template: 'VidarlDummyBundle:field_type/ezrichtext/custom_tag:linebreak.html.twig'
+        icon: '/bundles/ezplatformadminui/img/ez-icons.svg#video'
+        attributes:
+            foobar:
+                type: 'string'
+                required: true
+                default_value: ''
+
+    vcustom:
+        template: 'VidarlDummyBundle:field_type/ezrichtext/custom_tag:vcustom.html.twig'
+        icon: '/bundles/ezplatformadminui/img/ez-icons.svg#video'
+        attributes:
+            attrTitle:
+                type: 'string'
+                required: true
+                default_value: ''
+            attrDesc:
+              type: 'string'
+              required: true
+              default_value: ''
+            attrColor:
+              type: 'choice'
+              required: true
+              default_value: ''
+              choices: [red, blue, green]
+            attrUrl:
+              type: 'string'
+              required: true
+              default_value: ''
+
+    vcustominline:
+        template: 'VidarlDummyBundle:field_type/ezrichtext/custom_tag:vcustominline.html.twig'
+        icon: '/bundles/ezplatformadminui/img/ez-icons.svg#video'
+        is_inline: true
+        attributes:
+            attrTitle:
+                type: 'string'
+                required: true
+                default_value: ''
+            attrCar:
+                type: 'choice'
+                required: true
+                choices: [ford, bmw, audi]
+                default_value: ''
+            attrUrl:
+                type: 'string'
+                required: true
+                default_value: ''

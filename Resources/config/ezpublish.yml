@@ -1,0 +1,7 @@
+system:
+    default:
+        fieldtypes:
+            ezrichtext:
+                custom_tags: [vyoutube, linebreak, vcustom, vcustominline]
+                #custom_tags: [vyoutube, rawhtml, linebreak, vcustom]
+
