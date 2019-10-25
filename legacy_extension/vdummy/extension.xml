@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<software>
+    <metadata>
+        <name>VL Dummy Legacy extension</name>
+        <version>1.0</version>
+        <copyright>Copyright (C) Vidar Langseid.</copyright>
+        <license>For full copyright and license information view LICENSE file provided with this software.</license>
+        <info_url>https://github.com/vidarl/DummyBundle</info_url>
+    </metadata>
+</software>
