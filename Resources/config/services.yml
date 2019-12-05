@@ -6,3 +6,8 @@ services:
     vidarl_dummy.purge_client.dummyPurge:
         class: Vidarl\DummyBundle\PurgeClient\DummyPurgeClient
 
+    vidarl_dummy.http_cache.user_context_provider.paid_subscriber:
+        class: Vidarl\DummyBundle\ContextProvider\PaidSubscriber
+        arguments: ["@ezpublish.api.repository"]
+        tags:
+            - { name: fos_http_cache.user_context_provider }
