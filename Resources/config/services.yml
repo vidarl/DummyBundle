@@ -11,6 +11,7 @@ services:
         arguments: ["@ezpublish.api.repository"]
         tags:
             - { name: fos_http_cache.user_context_provider }
+            - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
 
     vidarl_dummy.twig.filter.has_paid:
         class: Vidarl\DummyBundle\Twig\HasPaidExtension

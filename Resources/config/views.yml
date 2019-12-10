@@ -1,0 +1,11 @@
+system:
+  site_group:
+    content_view:
+      # If you already have an `article` match in `app/config/views.yml` ( this is the case if you are using ezplatform-ee-demo or ezplatform-demo), you must
+      # comment that one out because it will have precedence over the match defined here...
+      full:
+        article:
+          controller: VidarlDummyBundle:Paywall:articlePaywallView
+          template: VidarlDummyBundle:full:articlePaywall.html.twig
+          match:
+            Identifier\ContentType: [article]

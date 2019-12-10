@@ -25,6 +25,12 @@
 {% endblock %}
 
 {% block content %}
+    {% if hasPaid %}
+        Congrats, you have paid<br/>
+    {%  else %}
+        No money<br/>
+    {%  endif %}
+
     <section class="content-type-article full-view">
         <div class="banner-image">
             <div class="thumbnail text-center">

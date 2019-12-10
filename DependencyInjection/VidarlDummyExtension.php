@@ -33,6 +33,8 @@ class VidarlDummyExtension extends Extension implements PrependExtensionInterfac
     {
         $this->prependConfig($container, __DIR__ . '/../Resources/config/ezpublish.yml', 'ezpublish');
         $this->prependConfig($container, __DIR__ . '/../Resources/config/richtext.yml', 'ezrichtext');
+        $this->prependConfig($container, __DIR__ . '/../Resources/config/views.yml', 'ezpublish');
+
 /*        $configFile = __DIR__ . '/../Resources/config/custom_tags.yml';
         $config = Yaml::parse( file_get_contents( $configFile ) );
         $container->prependExtensionConfig( 'ezpublish', $config );

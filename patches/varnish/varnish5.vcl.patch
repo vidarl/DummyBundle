@@ -1,0 +1,14 @@
+--- ../../vendor/ezsystems/ezplatform-http-cache/docs/varnish/vcl/varnish5.vcl.org	2019-12-06 11:15:16.562635631 +0100
++++ ../../vendor/ezsystems/ezplatform-http-cache/docs/varnish/vcl/varnish5.vcl	2019-12-10 09:29:01.331216665 +0100
+@@ -264,6 +264,11 @@
+     ) {
+         set req.http.x-user-hash = resp.http.x-user-hash;
+ 
++        // Also copy the httpcache-haspaid if set
++        if (resp.http.x-httpcache-haspaid) {
++            set req.http.x-httpcache-haspaid = resp.http.x-httpcache-haspaid;
++        }
++
+         return (restart);
+     }
+ 

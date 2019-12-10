@@ -1,0 +1,14 @@
+--- ../../vendor/ezsystems/ezplatform-http-cache-fastly/fastly/ez_main.vcl.org	2019-12-10 09:30:45.779562093 +0100
++++ ../../vendor/ezsystems/ezplatform-http-cache-fastly/fastly/ez_main.vcl	2019-12-10 09:31:57.995800708 +0100
+@@ -170,6 +170,11 @@
+     ) {
+         set req.http.x-user-hash = resp.http.x-user-hash;
+ 
++        // Also copy the httpcache-haspaid if set
++        if (resp.http.x-httpcache-haspaid) {
++            set req.http.x-httpcache-haspaid = resp.http.x-httpcache-haspaid;
++        }
++
+         restart;
+     }
+ 
